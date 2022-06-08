@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  int n = 5, soma = 0;
+  float media, desvio;
+  int v[n], i;
+
+  for (i=0;i<n;i++){
+    printf ("%d° valor:",i+1);
+    scanf("%d",&v[i]);
+    soma = soma + v[i];
+  }
+  media = soma/n;
+  float termo = 0;
+  for (i=0;i<n;i++){
+    termo = termo + pow((v[i]-media),2);
+  }
+  desvio = sqrt((1/((float)-1)) * termo);
+  printf("desvio:%f",desvio);
+  system("pause");
+  return 0;
+}
