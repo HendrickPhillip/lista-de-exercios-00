@@ -2,8 +2,7 @@
 #define tam 10
 
 int main() {
-   int vet[tam], i,ma = 0, me = 0,;
-   
+   int vet[tam], i,ma = 0, me = 0;
    printf("⬇ Digite seu vetor ⬇\n");
    for (i = 0; i < tam; i++) {
      printf("-> ");
