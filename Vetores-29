@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+int num[6],nump[6],sp=0,numi[6],qti=0,i;
+   
+for (i=0;i<6;i++){
+  printf("%i° numero:",i+1);
+  scanf("%d",&num[i]);
+}
+printf("\nNúmeros pares digitados:");
+for (i=0;i<6;i++){
+  if (num[i] %2==0){
+    printf("[%d]",num[i]);
+    sp =  sp + num[i];
+  }
+}
+printf("\nSoma dos números pares:%d",sp);
+printf("\nNúmeros ímpares digitados:");  
+for (i=0;i<6;i++){
+  if (num[i] %2!=0){  
+  printf("[%d]",num[i]);
+  qti++;     
+  }
+}
+printf("\nQuantidade de ímpares digitados:%d",qti); 
+return 0;
+}
